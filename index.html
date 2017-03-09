@@ -8,9 +8,11 @@
 <body>
 	<form action="timeline.html" method="POST">
 		<h2>Login Facebook</h2>
-		<p><input type="text" id="user" placeholder="Correo electrónico" required="Ingrese su correo"></p>
-		<p><input type="password" id="password" placeholder="contraseña" required="Ingrese su contraseña"></p>
-		<p><input type="submit" value="Entrar" onclick="Login()"></p>
+		<p><input type="text" id="user" placeholder="Correo electrónico"></p>
+		<p><span id="requiredCorreo"></span></p>
+		<p><input type="password" id="password" placeholder="contraseña"></p>
+		<p><span id="requiredPassword"></span></p>
+		<p><input type="submit" value="Entrar" onclick="Login(); return false"></p>
 		<script type="text/javascript" src="assets/js/app.js"></script>
 	</form>
 </body>
