@@ -8,7 +8,6 @@ var pwd = document.getElementById('password').value;
 
 function Login() {
 	validateInput();
-
 	for (var i = 0; i < users.length; i++) {
 		if(users[i].user == usu && users[i].password == pwd){
 			alert("Usted Ingreso");
@@ -30,7 +29,7 @@ function validateInput(){
 	if (usu.length == 0) {
 		requiredCorreo.innerHTML = "El campo de usuario no puede estar en blanco";
 	}
-	if (pwd.length == 0) {
+	else if (pwd.length == 0) {
 		requiredPassword.innerHTML = "El campo de usuario no puede estar en blanco";
 	}
 }
